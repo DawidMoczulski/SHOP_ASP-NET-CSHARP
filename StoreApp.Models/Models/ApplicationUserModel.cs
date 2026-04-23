@@ -17,6 +17,8 @@ namespace StoreApp.Models.Models
     {
         [Required]
         public string Name { get; set; }
+        
+        public string? Role { get; set; }
 
         public ICollection<OrderModel> Orders { get; set; }
         public WishListModel WishList { get; set; }
